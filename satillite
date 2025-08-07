@@ -1,0 +1,13 @@
+import random
+import pgzrun
+WIDTH = 750
+HEIGHT = 500
+s = Actor("satillite")
+def draw():
+    screen.fill('dark blue')
+    x = random.randint(1,750)
+    y = random.randint(1,500)
+    s.pos = x,y
+    s.draw.text('1')
+    s.draw()
+pgzrun.go()
